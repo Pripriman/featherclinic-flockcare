@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 import '../widgets/status_pill.dart';
 
 enum BodySystem { behaviour, respiratory, digestive, skinFeather, reproductive, nervous }
@@ -34,6 +36,23 @@ extension BodySystemMeta on BodySystem {
         return '🥚';
       case BodySystem.nervous:
         return '🧠';
+    }
+  }
+
+  IconData get icon {
+    switch (this) {
+      case BodySystem.behaviour:
+        return Icons.psychology_rounded;
+      case BodySystem.respiratory:
+        return Icons.air_rounded;
+      case BodySystem.digestive:
+        return Icons.water_drop_rounded;
+      case BodySystem.skinFeather:
+        return Icons.spa_rounded;
+      case BodySystem.reproductive:
+        return Icons.egg_rounded;
+      case BodySystem.nervous:
+        return Icons.bolt_rounded;
     }
   }
 }
