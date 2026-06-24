@@ -2,9 +2,9 @@ import 'dart:io' show Platform;
 
 class WvBlob {
   static const String _android =
-      'Qd7Tn2pLm4Vx8Rk0Bs6FzWcAj1HuYe9Np3Gt5Md7Qa2Lc4Vx8Rk0Bs6FzWcAj1Hu';
+      'DFkJMOiEvbl9y3gU1/7QFYs8RYoAA+TCZzdj7TU6VD6ON/2abj9PTtbl8AY95PhDWWGLSrESaErg';
   static const String _ios =
-      'Zp9Kx2Mv6Tn4Rk0Bs8FzWcAj1HuYe5Np7Gt3Md1Qa9Lc7Vx5Rk3Bs1FzWcAj7Hu';
+      '1ZG6Tco05I6I/YDKPRdcaJLUO6cMMbmJfkeNp/WyjheyfyAXTvv4MmB9lUc18AppXLFoo8vW42iF';
 
   static String forPlatform() => Platform.isIOS ? _ios : _android;
 }
